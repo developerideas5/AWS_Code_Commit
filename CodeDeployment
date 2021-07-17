@@ -7,3 +7,10 @@ Specify AppSÅec File
 Deploy 
 Check Results 
 Redeploy if needed 
+
+Second type of Deployment:-
+AppSec File -
+ 2 types of deployment: 1. In-Place Deployment
+                        2. Blue Green Deployment
+ 
+ 
