@@ -1,0 +1,23 @@
+Policy to master branch
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Action": [
+                "codecommit: GitPush",
+                "codecommit: DeleteBranch",
+                "codecommit: PutFile",
+                "codecommit:MergePullRequestByFastForward"],
+                "Resource" :"arn:aws:codecommit:us-east-1:273300214726:repo-demo",
+                "Condition": {
+                    "StringEqualsIfExists": {
+                        "codecommit:References": ["refs/heads/master"]
+                    },
+                    "Null": {
+                        "codecommit:References": false
+                    }
+                }
+        }
+    ]
+}
