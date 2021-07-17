@@ -1,0 +1,12 @@
+Create Repository in CodeCommit 
+Add a hello.txt file and commit it 
+Create another branch as developer branch and set it as default branch. 
+Create another IAM user and restrict that user to work on Main branch in 
+code commit repository that w have created in step 1. 
+4. Add Policy to the user giving full access to CodeCommit and restriction policy to avoid 
+access to main branch. 
+5. Login via other IAM user and add a file hello.txt in same repository but with different 
+content and commit it on developer branch. 
+6. Generate a pull request 
+7. Review and accept pull request by the main user who created the repository having 
+the access to main branch. 
