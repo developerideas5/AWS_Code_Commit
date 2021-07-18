@@ -1,5 +1,3 @@
-
-
 from flask import Flask
 
 def say_hello(username = "World"):
